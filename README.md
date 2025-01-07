@@ -11,67 +11,12 @@
 - JUnit 5 để kiểm thử.
 
 ### Lớp Calculator
-
-public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-
-    public int subtract(int a, int b) {
-        return a - b;
-    }
-
-    public int multiply(int a, int b) {
-        return a * b;
-    }
-
-    public int divide(int a, int b) {
-        if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero");
-        }
-        return a / b;
-    }
-}
+![Screenshot (158)](https://github.com/user-attachments/assets/d06129d7-b2b1-4bd6-b636-8fd4c5e0c7ff)
 
 ### Lớp Kiểm thử
-
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-
-public class CalculatorTest {
-    @Test
-    void testAdd() {
-        Calculator calc = new Calculator();
-        assertEquals(5, calc.add(2, 3), "Addition failed");
-    }
-
-    @Test
-    void testSubtract() {
-        Calculator calc = new Calculator();
-        assertEquals(1, calc.subtract(3, 2), "Subtraction failed");
-    }
-
-    @Test
-    void testMultiply() {
-        Calculator calc = new Calculator();
-        assertEquals(6, calc.multiply(2, 3), "Multiplication failed");
-    }
-
-    @Test
-    void testDivide() {
-        Calculator calc = new Calculator();
-        assertEquals(2, calc.divide(6, 3), "Division failed");
-    }
-
-    @Test
-    void testDivideByZero() {
-        Calculator calc = new Calculator();
-        Exception exception = assertThrows(ArithmeticException.class, () -> calc.divide(1, 0));
-        assertEquals("Cannot divide by zero", exception.getMessage());
-    }
-}
+![Screenshot (159)](https://github.com/user-attachments/assets/78edfb74-7a6d-40dd-b6a1-236610740345)
 
 ### Kết quả
-![Screenshot (157)](https://github.com/user-attachments/assets/43645a78-546e-4fbb-b8c2-562a4df9075f)
+![Screenshot (157)](https://github.com/user-attachments/assets/f6664fee-17c4-46fd-a719-c25596fc56fe)
 
 ### Tài liệu tham khảo: https://chatgpt.com/share/677b2a36-1820-8013-be04-e1376d262216
