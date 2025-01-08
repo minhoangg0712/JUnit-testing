@@ -4,24 +4,75 @@ Bài tập 1 của môn "Kiểm thử phần mềm" sử dụng JUnit5 của m�
 
 Đề bài: Kiểm thử đơn vị với Java.
 
-### Tính năng:
-- Cộng hai số nguyên.
-- Trừ hai số nguyên.
-- Nhân hai số nguyên.
-- Chia hai số nguyên với xử lý lỗi chia cho 0.
+### Các phép toán số học:
+- Cộng
+- Trừ
+- Nhân
+- Chia (với xử lý lỗi khi chia cho 0)
+- Tính mũ
+- Tính căn bậc hai (với xử lý lỗi cho đầu vào âm)
 
 ### Yêu cầu trước khi sử dụng:
 - Java Development Kit (JDK) 8 hoặc mới hơn.
 - Công cụ build Maven.
 - JUnit 5 để kiểm thử.
 
-### Lớp Calculator
-![Screenshot (158)](https://github.com/user-attachments/assets/d06129d7-b2b1-4bd6-b636-8fd4c5e0c7ff)
+### Kiểm thử đơn vị với JUnit 5:
+- Các trường hợp kiểm thử đầy đủ cho tất cả các phép toán, bao gồm các tình huống biên và ngoại lệ.
 
-### Lớp Kiểm thử
-![Screenshot (159)](https://github.com/user-attachments/assets/78edfb74-7a6d-40dd-b6a1-236610740345)
+## Cài đặt
+- Clone repository:
+
+    git clone https://github.com/minhoangg0712/JUnit-testing.git
+
+    cd JUnit-testing
+
+- Xây dựng dự án bằng Maven:
+
+    mvn clean install
+
+### Lớp Calculator
+
+Lớp Calculator cung cấp các phương thức sau:
+
+    BigDecimal add(BigDecimal a, BigDecimal b)
+
+    BigDecimal subtract(BigDecimal a, BigDecimal b)
+
+    BigDecimal multiply(BigDecimal a, BigDecimal b)
+
+    BigDecimal divide(BigDecimal a, BigDecimal b)
+
+    BigDecimal power(BigDecimal base, int exponent)
+
+    BigDecimal sqrt(BigDecimal value)
+
+### Lớp kiểm thử
+Để chạy các bài kiểm thử JUnit, sử dụng lệnh sau:
+
+    mvn test
+
+Các bài kiểm thử bao gồm các tình huống:
+
+- Các phép toán cơ bản
+- Xử lý ngoại lệ (ví dụ, chia cho 0, căn bậc hai của số âm)
+- Các tình huống biên và đầu vào đặc biệt
+
+### Cấu trúc dự án
+    ├── src
+    │   ├── main
+    │   │   └── java
+    │   │       └── Calculator.java
+    │   └── test
+    │       └── java
+    │           └── CalculatorTest.java
+    ├── pom.xml
+    └── README.md
 
 ### Kết quả
-![Screenshot (157)](https://github.com/user-attachments/assets/f6664fee-17c4-46fd-a719-c25596fc56fe)
+![Screenshot (163)](https://github.com/user-attachments/assets/739365cc-ea93-44bb-92fc-5a5d291c6f74)
 
-### Tài liệu tham khảo: https://chatgpt.com/share/677b2a36-1820-8013-be04-e1376d262216
+
+
+
+
