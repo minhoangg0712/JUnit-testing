@@ -21,13 +21,13 @@ Bài tập 1 của môn "Kiểm thử phần mềm" sử dụng JUnit5 của m�
 - Các trường hợp kiểm thử đầy đủ cho tất cả các phép toán, bao gồm các tình huống biên và ngoại lệ.
 
 ## Cài đặt
-- Clone repository:
+Clone repository:
 
     git clone https://github.com/minhoangg0712/JUnit-testing.git
 
     cd JUnit-testing
 
-- Xây dựng dự án bằng Maven:
+Xây dựng dự án bằng Maven:
 
     mvn clean install
 
@@ -69,10 +69,7 @@ Các bài kiểm thử bao gồm các tình huống:
     ├── pom.xml
     └── README.md
 
+
+
 ### Kết quả
-![Screenshot (163)](https://github.com/user-attachments/assets/739365cc-ea93-44bb-92fc-5a5d291c6f74)
-
-
-
-
-
+![Screenshot (163)](https://github.com/user-attachments/assets/1af86c7f-a232-41b0-951b-685ed8b27ab1)
